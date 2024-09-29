@@ -1,7 +1,8 @@
 import { useEffect } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+// import reactLogo from './assets/react.svg'
+// import viteLogo from '/vite.svg'
 import './App.css'
+import images from './assets/imageAny.jpeg'
 
 function App() {
   useEffect(() => {
@@ -59,12 +60,9 @@ function App() {
   return (
     <>
       <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+
+        <img src={images} className="" alt="Vite logo" />
+
       </div>
 
     </>
