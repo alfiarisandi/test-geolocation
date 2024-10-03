@@ -9,17 +9,14 @@ function App() {
 
 
   return (
-    <>
-      {/* <RouterProvider router={router} /> */}
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<TestA />} />
+        <Route path="/test-ip" element={<TestB />} />
+      </Routes>
 
-      <BrowserRouter basename="/">
-        <Routes>
-          <Route path="/" element={<TestA />} />
-          <Route path="/test-ip" element={<TestB />} />
-        </Routes>
-      </BrowserRouter>
+    </BrowserRouter>
 
-    </>
   )
 }
 
