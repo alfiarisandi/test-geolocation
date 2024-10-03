@@ -1,5 +1,7 @@
-import { RouterProvider } from "react-router-dom"
-import router from './router';
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+import TestA from "./componnet/TestA"
+import TestB from "./componnet/TestB"
+// import router from './router';
 
 
 function App() {
@@ -7,7 +9,14 @@ function App() {
 
   return (
     <>
-      <RouterProvider router={router} />
+      {/* <RouterProvider router={router} /> */}
+
+      <BrowserRouter basename="/">
+        <Routes>
+          <Route path="/" element={<TestA />} />
+          <Route path="/test-ip" element={<TestB />} />
+        </Routes>
+      </BrowserRouter>
 
     </>
   )

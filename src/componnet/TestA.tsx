@@ -39,9 +39,8 @@ function TestA() {
                   lat: position.latitude.toString(),
                   lang: position.longitude.toString(),
                   ipAddres: ipLocation?.ip,
-                  location: `${ipLocation?.city || ""}, ${
-                    ipLocation?.region || ""
-                  }`,
+                  location: `${ipLocation?.city || ""}, ${ipLocation?.region || ""
+                    }`,
                 }),
               }
             );
