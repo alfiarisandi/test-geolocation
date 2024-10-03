@@ -59,7 +59,10 @@ function TestA() {
   return (
     <>
       <div>
-        <img src={images} className="" alt="Vite logo" />
+        <img src={images} className="" alt="Vite logo" style={{
+          width: '10px'
+
+        }} />
       </div>
     </>
   );
